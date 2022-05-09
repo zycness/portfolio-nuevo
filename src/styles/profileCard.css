@@ -1,0 +1,98 @@
+@import url("../styles/app.css");
+
+.profile {
+  width: 450px;
+  min-height: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--font-text);
+  background-color: var(--color-30);
+  border-radius: 10px;
+  box-shadow: var(--container-shadow);
+  position: absolute;
+  top: -150px;
+  right: 40px;
+}
+
+.profile.dark {
+  background-color: var(--white-500);
+  box-shadow: none;
+}
+
+.profile__title {
+  font-size: 1rem;
+  margin-top: 5px;
+  font-family: var(--font-page);
+  color: var(--white-500);
+}
+
+.profile__title.dark {
+  color: var(--white-100);
+}
+
+.profile__desc {
+  font-size: 1rem;
+  letter-spacing: 3px;
+  color: var(--white-300);
+  margin-bottom: 20px;
+  font-weight: 300;
+  text-align: center;
+}
+
+.profile__image {
+  width: 100px;
+  border-radius: 10px;
+}
+
+.profile__socialMedias {
+  display: flex;
+  margin: 10px 0;
+}
+
+.profile__about {
+  padding: 0 20px;
+}
+
+.profile__about-title {
+  font-family: var(--font-page);
+}
+
+.profile__about-title.dark {
+  color: var(--white-100);
+}
+
+.profile__about-desc {
+  text-align: justify;
+  color: var(--white-300);
+}
+
+.profile__about-desc.dark {
+  color: var(--white-300);
+}
+
+.profileIcons {
+  color: var(--white);
+  transition: color 100ms ease-in;
+}
+
+.profile__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-10);
+  padding: 5px;
+  border-radius: 5px;
+  margin: 0 30px;
+}
+
+.profile__cv {
+  text-decoration: none;
+  color: var(--white);
+}
+
+
+.profile__link:hover > .profileIcons {
+  color: var(--color-0);
+}

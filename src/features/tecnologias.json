@@ -1,0 +1,47 @@
+{
+  "tecnologias": [
+    {
+      "title": "REACT.JS",
+      "subTech": ["HOOKS", "REACT HEAD (SEO)"]
+    },
+    {
+      "title": "CSS3",
+      "subTech": [
+        "DISEÑO RESPONSIVO",
+        "FLEXBOX",
+        "GRID",
+        "MEDIA QUERIES",
+        "DISEÑO MODERNO"
+      ]
+    },
+    {
+      "title": "HTML5",
+      "subTech": ["SEO", "CÓDIGO SEMÁNTICO", "CRUCE ENTRE PLATAFORMAS"]
+    },
+    {
+      "title": "JAVASCRIPT",
+      "subTech": ["BUENAS PRÁCTICAS", "ASINCRONISMO", "FETCH API", "POO"]
+    },
+    {
+      "title": "REDUX@TOOLKIT",
+      "subTech": ["STORE", "SLICES", "REDUCERS", "HOOKS"]
+    },
+    {
+      "title": "REACT ROUTER V6",
+      "subTech": ["ROUTES", "ROUTE", "LINK", "HOOKS"]
+    },
+    {
+      "title": "FRAMER MOTION",
+      "subTech": ["ANIMACIONES", "HOOKS", "TRANSICIONES", "VARIANTES"]
+    },
+    {
+      "title": "GIT",
+      "subTech": [
+        "CONTROL DE PAQUETES",
+        "GESTIONAMIENTO",
+        "CONTROL DE VERSIONES",
+        "RAMAS"
+      ]
+    }
+  ]
+}

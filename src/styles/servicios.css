@@ -1,0 +1,67 @@
+@import url("../styles/app.css");
+
+.servicios {
+  position: relative;
+  font-family: var(--font-text);
+  width: 80%;
+}
+
+.servicios__title {
+  font-size: 1.1rem;
+  font-family: var(--font-page);
+}
+
+.servicios__desc {
+  font-size: 0.8rem;
+  color: var(--white-300);
+}
+
+.servicios__list {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 300px);
+  grid-template-rows: repeat(2, 300px);
+  gap: 20px;
+  place-content: center;
+  margin: 30px 0;
+}
+
+.servicios__list-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: var(--container-shadow);
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.servicios__list-item__title {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 3px;
+}
+
+.servicios__list-item__desc {
+  font-size: 0.95rem;
+  color: var(--white-300);
+}
+
+.servicios__list-item__icon {
+  color: var(--color-10);
+  margin-bottom: 10px;
+}
+
+.servicios__title.dark,
+.servicios__list-item__title.dark {
+  color: var(--white);
+}
+
+.servicios__list-item.dark {
+  background-color: var(--white-500);
+  box-shadow: none;
+}
+
+.servicios__list-item__text {
+  min-height: 70%;
+}

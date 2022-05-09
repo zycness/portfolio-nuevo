@@ -1,0 +1,79 @@
+@import url("../styles/app.css");
+
+.navbar {
+  width: 80%;
+  margin: 20px 10px;
+}
+
+.navbar__list {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style-type: none;
+  font-family: var(--font-page);
+  font-weight: 700;
+  font-size: 1.2rem;
+  background: var(--color-30);
+  box-shadow: var(--container-shadow);
+  border-radius: 10px;
+}
+
+.navbar__list.dark {
+  background-color: var(--white-500);
+  box-shadow: none;
+}
+
+.navbar__list-item__link {
+  text-decoration: none;
+  color: var(--black);
+  margin: 0 20px;
+  transition: color 100ms ease-in;
+}
+
+.navbar__list-item__link.dark {
+  color: var(--white);
+}
+
+.navbar__list-item__link:focus,
+.navbar__list-item__link:hover {
+  color: var(--color-10);
+}
+
+.btn2 {
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 0 5px;
+  height: 30px;
+  width: 70px;
+  background-color: var(--color-0);
+  font-family: var(--font-page);
+  font-weight: 700;
+  color: var(--color-20);
+}
+
+.btn2.dark {
+  background-color: var(--color-40);
+  color: var(--color-5);
+}
+
+.theme__btn:hover > .themeIcon,
+.theme__btn:active > .themeIcon {
+  color: var(--color-10);
+}
+
+.theme__btn.dark:hover > .themeIcon,
+.theme__btn.dark:active > .themeIcon,
+.language__btn.dark:hover,
+.language__btn.dark:active {
+  color: var(--color-0);
+}
+
+.language__btn:hover,
+.language__btn:active {
+  color: var(--color-10);
+}

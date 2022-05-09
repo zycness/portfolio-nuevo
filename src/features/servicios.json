@@ -1,0 +1,20 @@
+{
+  "servicio": [
+    {
+      "title": "Diseño de página web",
+      "desc": "Se realiza un análisis previo de los intereses y metas del cliente, realizando sugerencias en cuanto a diseño, y se muestran posibles ejemplos. En caso de querer, se puede realizar páginas completamente personalizdas, con la intención de apuntar dicho diseño a los valores que quiera difundir y transmitir el mismo."
+    },
+    {
+      "title": "Desarrollo de página web",
+      "desc": "Luego de obtener un diseño o idea, se realiza el desarrollo de la misma a través de tecnologías y prácticas que permiten que esta sea fácil de mantener, rápida y buscar. En este proceso se realizan consultas al cliente en caso de querer modificar o quitar algo, para lograr su satisfacción al 100%"
+    },
+    {
+      "title": "Hosting/dominio",
+      "desc": "Dicho servicio se ofrece para las empresas/negocios/emprendimientos que no sepan o no estén interesados en interactuar e informarse sobre este sector. Para su resolución se realiza la cotización junto con los beneficios y carácterísticas que estas poseen, explicando de una forma entendible para cualquier tipo de cliente con o sin conocimientos."
+    },
+    {
+      "title": "Servicio completo de página web",
+      "desc": "A través de éste se logra permitir a empresas/negocios/emprendimientos enfocarse 100% en su trabajo y no en buscar en todo internet cada uno de los componentes para realizar una página, dejando como resultado su satisfacción y lograr ver su sitio en linea. Este servicio se presupuesta y se ofrece un mantenimiento mensual como beneficio."
+    }
+  ]
+}

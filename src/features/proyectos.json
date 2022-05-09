@@ -1,0 +1,34 @@
+{
+  "proyectos": [
+    {
+      "title": "Weather App",
+      "demo": "https://weather-app-ecru-phi.vercel.app/",
+      "repo": "https://github.com/zycness/weather-app",
+      "subTech": ["JAVASCRIPT", "CSS3", "HTML5", "FETCH", "WEATHER API"]
+    },
+    {
+      "title": "To-do List",
+      "demo": "https://todo-list-swart-eight.vercel.app/",
+      "repo": "https://github.com/zycness/todo-list",
+      "subTech": ["JAVASCRIPT", "HTML5", "CSS3", "LOCALSTORAGE"]
+    },
+    {
+      "title": "Antiguo Portafolio",
+      "demo": "https://portafolio-kevinnahuelf.vercel.app/",
+      "repo": "https://github.com/zycness/portfolio",
+      "subTech": ["JAVASCRIPT", "CSS3", "HTML5", "TYPED.JS"]
+    },
+    {
+      "title": "Películas recomendadas",
+      "demo": "https://movie-searcher-mu.vercel.app/",
+      "repo": "https://github.com/zycness/movie-searcher",
+      "subTech": [
+        "REACT.JS",
+        "REDUX@TOOLKIT",
+        "ROUTERV6",
+        "HOOKS",
+        "MANTINE UI"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,94 @@
+@import url("../styles/app.css");
+
+.proyectos {
+  font-family: var(--font-text);
+  width: 80%;
+}
+
+.proyectos__list {
+  margin: 20px 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 350px));
+  grid-template-rows: repeat(auto-fill, 320px);
+  place-content: center;
+  gap: 20px;
+}
+
+.proyectos__title,
+.proyectos__list-item__title {
+  font-family: var(--font-page);
+  font-size: 1.1rem;
+}
+
+.proyectos__title.dark,
+.proyectos__list-item__title.dark {
+  color: var(--white);
+}
+
+.proyectos__desc {
+  color: var(--white-400);
+  font-size: 0.8rem;
+  font-family: var(--font-extras);
+}
+
+.proyectos__desc.dark {
+  color: var(--white-300);
+}
+
+.proyectos__list-item__title {
+  text-align: center;
+  margin: 20px 0 10px 0;
+}
+
+.proyectos__list-item {
+  width: 350px;
+  min-height: 300px;
+  max-width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  box-shadow: var(--container-shadow);
+  border-radius: 10px;
+  padding-bottom: 20px;
+}
+
+.proyectos__list-item.dark {
+  box-shadow: none;
+  background-color: var(--white-500);
+}
+
+.proyectos__list-item__img {
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.subTech__container {
+  min-height: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.secBtn {
+  border: none;
+  background: transparent;
+  padding: 5px;
+  border-radius: 5px;
+  margin: 0 10px;
+}
+
+.secBtn__link {
+  color: var(--color-20);
+  text-decoration: none;
+  font-family: var(--font-extras);
+  font-size: 1.1rem;
+  font-weight: 900;
+}
+
+.secBtn__link.dark {
+  color: var(--color-10);
+}

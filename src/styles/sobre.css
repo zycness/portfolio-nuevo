@@ -1,0 +1,110 @@
+@import url("../styles/app.css");
+
+.about {
+  width: 80%;
+  max-width: 100%;
+  margin: 20px 10px;
+  font-family: var(--font-text);
+}
+
+.firstSec,
+.secondSec {
+  margin: 20px 0;
+}
+
+.firstSec__title,
+.secondSec__title {
+  font-family: var(--font-page);
+  font-size: 1.1rem;
+}
+
+.firstSec__title.dark,
+.secondSec__title.dark {
+  color: var(--white);
+}
+
+.firstSec__desc {
+  color: var(--white-400);
+  margin-bottom: 5px;
+}
+
+.firstSec__desc.dark {
+  color: var(--white-300);
+}
+
+.secondSec__title {
+  margin-bottom: 20px;
+}
+
+.tech__list {
+  display: grid;
+  min-height: 25rem;
+  width: 100%;
+  max-width: 100%;
+  grid-template-columns: repeat(auto-fill, 250px);
+  grid-template-rows: repeat(auto-fill, 170px);
+  list-style-type: none;
+  gap: 20px;
+  place-content: center;
+}
+
+.tech__list-item {
+  padding: 0 10px;
+  min-height: 170px;
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: var(--container-shadow);
+  border-radius: 10px;
+}
+
+.tech__list-item.dark {
+  background-color: var(--white-500);
+  box-shadow: none;
+}
+
+.tech__title {
+  font-size: 1rem;
+  color: var(--white-400);
+}
+
+.tech__title.dark {
+  color: var(--white-200);
+}
+
+.subTech {
+  height: 30%;
+}
+
+.subTech {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.subTech__desc {
+  background-color: var(--color-5);
+  padding: 5px;
+  margin: 5px;
+  border-radius: 10px;
+  font-size: 0.55rem;
+  font-weight: 700;
+  color: var(--color-20);
+}
+
+.subTech__desc.dark {
+  background-color: var(--color-40);
+  color: var(--white-200);
+}
+
+.techIcon {
+  color: var(--color-10);
+  margin-bottom: 5px;
+}
+
+.techImg {
+  height: 42px;
+}

@@ -1,0 +1,217 @@
+/* fuentes */
+/* para características */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;600&display=swap");
+/* para textos */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap");
+/* para textos extras */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@200;400&display=swap");
+/* extras */
+
+:root {
+  /* color */
+  --color-0: #bddcff;
+  --color-5: #e6f0fc;
+  --color-10: #4895ef;
+  --color-20: #2169bd;
+  --color-30: #ffffff;
+  --color-40: #0d4179;
+  --color-60: #f9fafb;
+  --white: #ffffff;
+  --white-100: #fafafc;
+  --white-200: #d4d4d4;
+  --white-300: #9999a1;
+  --white-400: #66666e;
+  --white-500: #212529;
+  --white-600: #171a1d;
+  --white-700: #101011;
+  --black: #000000;
+  --success-color: #64bc26;
+  --error-color: #ea1601;
+  /* textos */
+  --font-page: "Poppins", sans-serif;
+  --font-text: "Roboto", sans-serif;
+  --font-extras: "Noto Sans", sans-serif;
+  /* sombra */
+  --container-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+/* home */
+
+.App {
+  width: 100vw;
+  max-width: 100%;
+  min-height: 100vh;
+  background-color: var(--color-60);
+  display: flex;
+  position: relative;
+  padding-top: 30vh;
+}
+
+.App::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  height: 30vh;
+  width: 100vw;
+  max-width: 100%;
+  background-image: url("../images/background1.jpg");
+  background-position: top;
+}
+
+.App.dark {
+  background-color: var(--white-600);
+}
+.App__profile {
+  position: relative;
+  width: 40vw;
+  max-width: 100%;
+  min-height: 70vh;
+  max-width: 100%;
+}
+
+.App__content {
+  width: 60vw;
+  max-width: 100%;
+  min-height: 70vh;
+}
+
+/* btn */
+
+.btn {
+  border: none;
+  background-color: var(--color-10);
+  color: var(--white);
+  font-family: var(--font-page);
+  font-weight: 700;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 5px;
+  transition: background 100ms ease-in-out, transform 200ms ease-in;
+}
+
+.btn:hover {
+  background: var(--color-20);
+}
+
+.btn:active {
+  transform: scale(0.95);
+}
+
+@media screen and (max-width: 1350px) {
+  .App {
+    width: 100vw;
+    max-width: 100%;
+    min-height: 100vh;
+    background-color: var(--color-60);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding-top: 30vh;
+  }
+  .App__profile {
+    width: 100vw;
+    max-width: 100%;
+    display: grid;
+    place-content: center;
+    padding: 20px 0;
+  }
+
+  .App__content {
+    width: 100vw;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .profile {
+    width: 450px;
+    max-width: 100%;
+    min-height: 450px;
+    position: relative;
+    padding: 20px 0;
+    top: 0;
+    right: 0;
+  }
+}
+@media screen and (max-width: 1024px) {
+}
+@media screen and (max-width: 810px) {
+  .navbar__list {
+    font-size: 0.9rem;
+  }
+  .btn2 {
+    height: 30px;
+    width: 70px;
+    background-color: var(--color-0);
+    font-family: var(--font-page);
+    font-weight: 700;
+    color: var(--color-20);
+  }
+  .navbar__list-item__link {
+    text-decoration: none;
+    color: var(--black);
+    margin: 0 10px;
+    transition: color 100ms ease-in;
+  }
+  .about {
+    width: 95%;
+    max-width: 100%;
+    margin: 20px 10px;
+    font-family: var(--font-text);
+  }
+}
+@media screen and (max-width: 605px) {
+  .navbar__list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  .navbar {
+    width: 95%;
+    margin: 20px 10px;
+    position: sticky;
+    top: 10px;
+    z-index: 1000;
+  }
+  .navbar__list-item {
+    margin: 5px 0;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .profile {
+    width: 95vw;
+  }
+  .profile__socialMedias {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .profile__link {
+    margin: 10px;
+  }
+  .servicios {
+    position: relative;
+    font-family: var(--font-text);
+    width: 80%;
+    min-height: 90vh;
+  }
+  .servicios__list-item__desc {
+    font-size: 0.8rem;
+    color: var(--white-300);
+    text-align: justify;
+  }
+  .servicios__list {
+    grid-template-columns: repeat(auto-fill, 1fr);
+    grid-template-rows: auto;
+  }
+}
