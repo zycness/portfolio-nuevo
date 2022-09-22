@@ -1,4 +1,5 @@
 import { React, useState, useEffect } from "react";
+import "../styles/app.css"
 import "../styles/servicios.css";
 import { IconContext } from "react-icons";
 import { useSelector } from "react-redux";

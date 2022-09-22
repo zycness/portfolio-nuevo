@@ -5,7 +5,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap");
 /* para textos extras */
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@200;400&display=swap");
-/* extras */
 
 :root {
   /* color */
@@ -169,7 +168,7 @@
     font-family: var(--font-text);
   }
 }
-@media screen and (max-width: 605px) {
+@media (max-width: 605px) {
   .navbar__list {
     display: flex;
     flex-wrap: wrap;
@@ -188,7 +187,7 @@
   }
 }
 
-@media screen and (max-width: 450px) {
+@media (max-width: 450px) {
   .profile {
     width: 95vw;
   }

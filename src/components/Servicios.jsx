@@ -1,4 +1,5 @@
 import { React, useState, useEffect } from "react";
+import "../styles/app.css"
 import "../styles/servicios.css";
 import ServicioItem from "./ServicioItem";
 import serviciosObj from "../features/servicios.json";

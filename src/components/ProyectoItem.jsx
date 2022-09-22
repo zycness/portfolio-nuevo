@@ -1,13 +1,25 @@
 import React from "react";
+import "../styles/app.css";
 import "../styles/proyectos.css";
+import { motion } from "framer-motion";
 
 const ProyectoItem = ({ proyectoData, image, darkLight }) => {
+  const item = {
+    visible: { opacity: 1, y: 0 },
+    hidden: { opacity: 0, y: 100 },
+  };
+
   return (
-    <li className={darkLight ? "proyectos__list-item" : "proyectos__list-item dark"}>
+    <motion.li
+      variants={item}
+      className={
+        darkLight ? "proyectos__list-item" : "proyectos__list-item dark"
+      }
+    >
       <img
         src={image}
         alt={proyectoData.title}
-        className="proyectos__list-item__img"
+        className='proyectos__list-item__img'
       />
       <h5
         className={
@@ -18,7 +30,7 @@ const ProyectoItem = ({ proyectoData, image, darkLight }) => {
       >
         {proyectoData.title}
       </h5>
-      <div className="subTech__container">
+      <div className='subTech__container'>
         {proyectoData.subTech.map((item, index) => {
           return (
             <span
@@ -30,29 +42,29 @@ const ProyectoItem = ({ proyectoData, image, darkLight }) => {
           );
         })}
       </div>
-      <div className="secBtn__container">
-        <button className="secBtn">
+      <div className='secBtn__container'>
+        <button className='secBtn'>
           <a
             href={proyectoData.demo}
-            target="_blank"
-            rel="noopener noreferrer"
+            target='_blank'
+            rel='noopener noreferrer'
             className={darkLight ? "secBtn__link" : "secBtn__link dark"}
           >
             DEMO
           </a>
         </button>
-        <button className="secBtn">
+        <button className='secBtn'>
           <a
             href={proyectoData.repo}
-            target="_blank"
-            rel="noopener noreferrer"
+            target='_blank'
+            rel='noopener noreferrer'
             className={darkLight ? "secBtn__link" : "secBtn__link dark"}
           >
             CÓDIGO
           </a>
         </button>
       </div>
-    </li>
+    </motion.li>
   );
 };
 

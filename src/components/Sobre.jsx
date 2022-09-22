@@ -2,12 +2,34 @@ import React, { useEffect, useState } from "react";
 import { useSelector } from "react-redux";
 import icons from "../features/techIcons";
 import tecnologiasObj from "../features/tecnologias.json";
+import "../styles/app.css";
 import "../styles/sobre.css";
 import { IconContext } from "react-icons";
+import { motion } from "framer-motion";
 
 const Sobre = () => {
   const theme = useSelector((state) => state.theme.value);
   const [darkLight, setDarkLight] = useState(true);
+  const list = {
+    visible: {
+      opacity: 1,
+      transition: {
+        when: "beforeChildren",
+        staggerChildren: 0.1,
+      },
+    },
+    hidden: {
+      opacity: 0,
+      transition: {
+        when: "afterChildren",
+      },
+    },
+  };
+
+  const item = {
+    visible: { opacity: 1, y: 0 },
+    hidden: { opacity: 0, y: 100 },
+  };
 
   useEffect(() => {
     theme ? setDarkLight(true) : setDarkLight(false);
@@ -42,10 +64,16 @@ const Sobre = () => {
         </h4>
         <article>
           <IconContext.Provider value={{ size: "3rem", className: "techIcon" }}>
-            <ul className="tech__list">
-              {tecnologiasObj.tecnologias.map((item, i) => {
+            <motion.ul
+              className='tech__list'
+              initial='hidden'
+              animate='visible'
+              variants={list}
+            >
+              {tecnologiasObj.tecnologias.map((item1, i) => {
                 return (
-                  <li
+                  <motion.li
+                    variants={item}
                     className={
                       theme ? "tech__list-item" : "tech__list-item dark"
                     }
@@ -53,11 +81,11 @@ const Sobre = () => {
                   >
                     {icons[i]}
                     <h5 className={theme ? "tech__title" : "tech__title dark"}>
-                      {item.title}
+                      {item1.title}
                     </h5>
-                    <div className="subTech">
-                      {item.subTech &&
-                        item.subTech.map((item, i) => {
+                    <div className='subTech'>
+                      {item1.subTech &&
+                        item1.subTech.map((item1, i) => {
                           return (
                             <span
                               className={
@@ -65,15 +93,15 @@ const Sobre = () => {
                               }
                               key={i}
                             >
-                              {item}
+                              {item1}
                             </span>
                           );
                         })}
                     </div>
-                  </li>
+                  </motion.li>
                 );
               })}
-            </ul>
+            </motion.ul>
           </IconContext.Provider>
         </article>
       </section>

@@ -15,12 +15,12 @@ ReactDOM.createRoot(document.getElementById("root")).render(
     <Provider store={stores}>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<App />}>
+          <Route path='/' element={<App />}>
             <Route index element={<Proyectos />} />
-            <Route path="sobre-mi" element={<Sobre />} />
-            <Route path="servicios" element={<Servicios />} />
-            <Route path="contacto" element={<Contacto />} />
-            <Route path="proyectos" element={<Proyectos />} />
+            <Route path='sobre-mi' element={<Sobre />} />
+            {/* <Route path="servicios" element={<Servicios />} /> */}
+            <Route path='contacto' element={<Contacto />} />
+            <Route path='proyectos' element={<Proyectos />} />
           </Route>
         </Routes>
       </BrowserRouter>

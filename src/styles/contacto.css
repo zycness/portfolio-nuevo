@@ -8,6 +8,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding: 50px 0 200px 0;
   align-items: center;
 }
 
@@ -30,6 +31,7 @@
   border-radius: 10px;
   box-shadow: var(--container-shadow);
 }
+
 .contacto__form.dark {
   background-color: var(--white-500);
   box-shadow: none;
@@ -105,4 +107,23 @@
   text-align: center;
   font-weight: 700;
   margin: 30px 0 10px 0;
+}
+
+@media screen and (max-width: 1024px) {
+  .contacto {
+    width: 90%;
+  }
+
+  .contacto__form {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 810px) {
+  .contacto {
+    width: 90%;
+  }
+
+  .contacto__form {
+    width: 100%;
+  }
 }

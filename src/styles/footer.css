@@ -1,0 +1,29 @@
+#footer {
+  width: 100%;
+  min-height: 70px;
+  background-color: var(--white-500);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--white-200);
+  font-family: var(--font-page);
+}
+
+.footer_title {
+  font-size: 1.1rem;
+  font-weight: 400;
+  display: flex;
+}
+
+.footer_link {
+  font-weight: 700;
+  color: var(--white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 5px;
+}
+
+.footer_icon {
+  margin-left: 2px;
+}

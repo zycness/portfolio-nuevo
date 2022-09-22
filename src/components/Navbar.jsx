@@ -1,23 +1,27 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import "../styles/app.css";
 import "../styles/navbar.css";
 import { useDispatch, useSelector } from "react-redux";
 import { changeTheme } from "../features/slices/themeSlice";
 import { FaMoon, FaSun } from "react-icons/fa";
-import { changeLanguage } from "../features/slices/languageSlice";
 import { IconContext } from "react-icons";
 
 const navbar = () => {
   const dispatch = useDispatch();
   const theme = useSelector((state) => state.theme.value);
-  const language = useSelector((state) => state.language.value);
+
+  const handleClick = () => {
+    dispatch(changeTheme());
+    localStorage.setItem("theme", theme ? "dark" : "light");
+  };
 
   return (
-    <nav className="navbar">
+    <nav className='navbar'>
       <ul className={theme ? "navbar__list" : "navbar__list dark"}>
-        <li className="navbar__list-item">
+        <li className='navbar__list-item'>
           <Link
-            to="/proyectos"
+            to='/proyectos'
             className={
               theme ? "navbar__list-item__link" : "navbar__list-item__link dark"
             }
@@ -25,9 +29,9 @@ const navbar = () => {
             Proyectos
           </Link>
         </li>
-        <li className="navbar__list-item">
+        <li className='navbar__list-item'>
           <Link
-            to="/sobre-mi"
+            to='/sobre-mi'
             className={
               theme ? "navbar__list-item__link" : "navbar__list-item__link dark"
             }
@@ -35,19 +39,19 @@ const navbar = () => {
             Sobre mí
           </Link>
         </li>
-        <li className="navbar__list-item">
-          <Link
+        {/* <li className="navbar__list-item">
+          {/* <Link
             to="/servicios"
             className={
               theme ? "navbar__list-item__link" : "navbar__list-item__link dark"
             }
           >
             Servicios
-          </Link>
-        </li>
-        <li className="navbar__list-item">
+          </Link> */}
+        {/* </li> */}
+        <li className='navbar__list-item'>
           <Link
-            to="/contacto"
+            to='/contacto'
             className={
               theme ? "navbar__list-item__link" : "navbar__list-item__link dark"
             }
@@ -58,9 +62,7 @@ const navbar = () => {
         <IconContext.Provider value={{ size: "1rem", className: "themeIcon" }}>
           <button
             className={theme ? "theme__btn btn2" : "theme__btn btn2 dark"}
-            onClick={() => {
-              dispatch(changeTheme());
-            }}
+            onClick={handleClick}
           >
             {theme ? <FaMoon /> : <FaSun />}
           </button>

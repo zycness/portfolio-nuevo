@@ -13,12 +13,6 @@
       "subTech": ["JAVASCRIPT", "HTML5", "CSS3", "LOCALSTORAGE"]
     },
     {
-      "title": "Antiguo Portafolio",
-      "demo": "https://portafolio-kevinnahuelf.vercel.app/",
-      "repo": "https://github.com/zycness/portfolio",
-      "subTech": ["JAVASCRIPT", "CSS3", "HTML5", "TYPED.JS"]
-    },
-    {
       "title": "Películas recomendadas",
       "demo": "https://movie-searcher-mu.vercel.app/",
       "repo": "https://github.com/zycness/movie-searcher",

@@ -3,6 +3,7 @@
 .proyectos {
   font-family: var(--font-text);
   width: 80%;
+  padding-bottom: 150px;
 }
 
 .proyectos__list {
