@@ -19,9 +19,9 @@ function App() {
 
   useEffect(() => {
     const themeLocalStorage = localStorage.getItem("theme");
-    if (themeLocalStorage.toString() == "dark") {
+    if (themeLocalStorage == "dark") {
       dispatch(changeThemeDark());
-    } else if (themeLocalStorage.toString() == "light") {
+    } else if (themeLocalStorage == "light") {
       dispatch(changeThemeLight());
     }
 
