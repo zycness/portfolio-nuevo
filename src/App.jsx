@@ -18,9 +18,9 @@ import HttpApi from "i18next-http-backend";
 import { useTranslation } from "react-i18next";
 
 i18n
-  .use(initReactI18next)
-  .use(LanguageDetector)
   .use(HttpApi)
+  .use(LanguageDetector)
+  .use(initReactI18next)
   .init({
     supportedLngs: ["en", "es"],
     fallbackLng: "en",
@@ -35,9 +35,10 @@ i18n
         "path",
         "subdomain",
       ],
+      caches: ["localStorage", "cookie"],
     },
     backend: {
-      loadPath: "../src/locales/{{lng}}/translations.json",
+      loadPath: "/assets/locales/{{lng}}/translations.json",
     },
     react: {
       useSuspense: false,
