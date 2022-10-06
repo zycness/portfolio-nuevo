@@ -60,13 +60,18 @@ const navbar = () => {
             {theme ? <FaMoon /> : <FaSun />}
           </button>
         </IconContext.Provider>
-        <select
+        <button
           className={theme ? "language__btn btn2" : "language__btn btn2 dark"}
-          onClick={(e) => i18next.changeLanguage(e.target.value)}
+          onClick={() => i18next.changeLanguage("es")}
         >
-          <option value='en'>English</option>
-          <option value='es'>Español</option>
-        </select>
+          Español
+        </button>
+        <button
+          className={theme ? "language__btn btn2" : "language__btn btn2 dark"}
+          onClick={() => i18next.changeLanguage("en")}
+        >
+          English
+        </button>
       </ul>
     </nav>
   );
