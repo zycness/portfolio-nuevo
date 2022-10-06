@@ -37,7 +37,7 @@ i18n
       ],
     },
     backend: {
-      loadPath: "/src/locales/{{lng}}/translations.json",
+      loadPath: "../src/locales/{{lng}}/translations.json",
     },
     react: {
       useSuspense: false,
