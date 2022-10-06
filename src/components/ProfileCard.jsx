@@ -7,7 +7,7 @@ import { IconContext } from "react-icons";
 import { useSelector } from "react-redux";
 import { useTranslation } from "react-i18next";
 import resume from "../file/Kevin_Web_Developer_Resume.pdf";
-import cv from "../file/CURRICULUM.pdf";
+import cv from "../file/Kevin_Web_Developer_ES.pdf";
 import i18next from "i18next";
 
 const ProfileCard = () => {
