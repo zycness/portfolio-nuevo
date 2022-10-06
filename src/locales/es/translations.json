@@ -1,0 +1,40 @@
+{
+  "profileCard": {
+    "download": "Descargar CV (ESPAÑOL)",
+    "aboutMe": {
+      "title": "Sobre mí",
+      "desc": "Soy un joven muy apasionado por el desarrollo web, en búsqueda de nuevos desafíos, superándose día a día con perseverancia, capacidad y motivación. Puedo comunicar de manera eficiente los problemas y dar su resolución de una forma lógica."
+    }
+  },
+  "contact": {
+    "title": "Escríbame y será contactado brevemente.",
+    "name": "Nombre:",
+    "email": "Email: ",
+    "phone": "Número de teléfono: ",
+    "message": "Mensaje: ",
+    "send": "Enviar mensaje",
+    "error": "Un error se ha presentado, favor de esperar unos minutos.",
+    "success": "Su mensaje ha sido enviado exitosamente."
+  },
+  "footer": {
+    "made": "HECHO POR: "
+  },
+  "navbar": {
+    "projects": "Proyectos",
+    "about": "Sobre mí",
+    "contact": "Contacto"
+  },
+  "projectItem": {
+    "code": "CÓDIGO"
+  },
+  "projects": {
+    "title": "Estos son mis proyectos",
+    "desc": "Todos mis proyectos fueron hechos por mí, sin referencia de diseño."
+  },
+  "about": {
+    "title": "¿Quién soy?",
+    "desc": "¡Hola! Soy Kevin, tengo 20 años, soy un apasionado por la programación desde muy chico, actualmente me encuentro estudiando de forma autodidacta, día tras día sin parar, con la intención y motivación de poder ser muy bueno en lo que hago y poder ayudar a otros; tengo la capacidad y perseverancia para afrontar y seguir a través de cualquier aventura/problema que se me ponga en frente.",
+    "desc1": "Voy a dar mi mejor intento tratando de solucionar cualquier inconveniente o problema por el cual estés/en cruzando utilizando todos mis recursos y capacidad para llegar a una solución que le/s satisfaga.",
+    "tech": "Tecnologías que utilizo"
+  }
+}

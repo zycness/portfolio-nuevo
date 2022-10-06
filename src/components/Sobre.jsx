@@ -6,10 +6,12 @@ import "../styles/app.css";
 import "../styles/sobre.css";
 import { IconContext } from "react-icons";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 const Sobre = () => {
   const theme = useSelector((state) => state.theme.value);
   const [darkLight, setDarkLight] = useState(true);
+  const { t } = useTranslation();
   const list = {
     visible: {
       opacity: 1,
@@ -39,28 +41,20 @@ const Sobre = () => {
     <article className={darkLight ? "about" : "about dark"}>
       <section className={darkLight ? "firstSec" : "firstSec dark"}>
         <h4 className={darkLight ? "firstSec__title" : "firstSec__title dark"}>
-          ¿Quién soy?
+          {t("about.title")}
         </h4>
         <p className={theme ? "firstSec__desc" : "firstSec__desc dark"}>
-          ¡Hola! Soy Kevin, tengo 20 años, soy un apasionado por la programación
-          desde muy chico, actualmente me encuentro estudiando de forma
-          autodidacta, día tras día sin parar, con la intención y motivación de
-          poder ser muy bueno en lo que hago y poder ayudar a otros; tengo la
-          capacidad y perseverancia para afrontar y seguir a través de cualquier
-          aventura/problema que se me ponga en frente.
+          {t("about.desc")}
         </p>
         <p className={theme ? "firstSec__desc" : "firstSec__desc dark"}>
-          Voy a dar mi mejor intento tratando de solucionar cualquier
-          inconveniente o problema por el cual estés/en cruzando utilizando
-          todos mis recursos y capacidad para llegar a una solución que le/s
-          satisfaga.
+          {t("about.desc1")}
         </p>
       </section>
       <section className={darkLight ? "secondSec" : "secondSec dark"}>
         <h4
           className={darkLight ? "secondSec__title" : "secondSec__title dark"}
         >
-          Tecnologías que utilizo
+          {t("about.tech")}
         </h4>
         <article>
           <IconContext.Provider value={{ size: "3rem", className: "techIcon" }}>

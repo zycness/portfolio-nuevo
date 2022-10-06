@@ -7,20 +7,20 @@
     {
       "title": "CSS3",
       "subTech": [
-        "DISEÑO RESPONSIVO",
+        "RESPONSIVE DESGIN",
         "FLEXBOX",
         "GRID",
         "MEDIA QUERIES",
-        "DISEÑO MODERNO"
+        "MODERN DESIGN"
       ]
     },
     {
       "title": "HTML5",
-      "subTech": ["SEO", "CÓDIGO SEMÁNTICO", "CRUCE ENTRE PLATAFORMAS"]
+      "subTech": ["SEO", "SEMANTIC CODE", "CROSS PLATFORMS"]
     },
     {
       "title": "JAVASCRIPT",
-      "subTech": ["BUENAS PRÁCTICAS", "ASINCRONISMO", "FETCH API", "POO"]
+      "subTech": ["GOOD PRACTICES", "ASYNCHRONOUS", "FETCH API", "POO"]
     },
     {
       "title": "REDUX@TOOLKIT",
@@ -32,15 +32,15 @@
     },
     {
       "title": "FRAMER MOTION",
-      "subTech": ["ANIMACIONES", "HOOKS", "TRANSICIONES", "VARIANTES"]
+      "subTech": ["ANIMATIONS", "HOOKS", "TRANSITIONS", "VARIANTS"]
     },
     {
       "title": "GIT",
       "subTech": [
-        "CONTROL DE PAQUETES",
-        "GESTIONAMIENTO",
-        "CONTROL DE VERSIONES",
-        "RAMAS"
+        "PACKAGE MANAGEMENT",
+        "MANAGEMENT",
+        "VERSION CONTROL",
+        "BRANCHES"
       ]
     }
   ]

@@ -6,11 +6,13 @@ import { useDispatch, useSelector } from "react-redux";
 import { changeTheme } from "../features/slices/themeSlice";
 import { FaMoon, FaSun } from "react-icons/fa";
 import { IconContext } from "react-icons";
+import { useTranslation } from "react-i18next";
+import i18next from "i18next";
 
 const navbar = () => {
   const dispatch = useDispatch();
   const theme = useSelector((state) => state.theme.value);
-
+  const { t } = useTranslation();
   const handleClick = () => {
     dispatch(changeTheme());
     localStorage.setItem("theme", theme ? "dark" : "light");
@@ -26,7 +28,7 @@ const navbar = () => {
               theme ? "navbar__list-item__link" : "navbar__list-item__link dark"
             }
           >
-            Proyectos
+            {t("navbar.projects")}
           </Link>
         </li>
         <li className='navbar__list-item'>
@@ -36,19 +38,10 @@ const navbar = () => {
               theme ? "navbar__list-item__link" : "navbar__list-item__link dark"
             }
           >
-            Sobre mí
+            {t("navbar.about")}
           </Link>
         </li>
-        {/* <li className="navbar__list-item">
-          {/* <Link
-            to="/servicios"
-            className={
-              theme ? "navbar__list-item__link" : "navbar__list-item__link dark"
-            }
-          >
-            Servicios
-          </Link> */}
-        {/* </li> */}
+
         <li className='navbar__list-item'>
           <Link
             to='/contacto'
@@ -56,7 +49,7 @@ const navbar = () => {
               theme ? "navbar__list-item__link" : "navbar__list-item__link dark"
             }
           >
-            Contacto
+            {t("navbar.contact")}
           </Link>
         </li>
         <IconContext.Provider value={{ size: "1rem", className: "themeIcon" }}>
@@ -67,12 +60,13 @@ const navbar = () => {
             {theme ? <FaMoon /> : <FaSun />}
           </button>
         </IconContext.Provider>
-        {/* <button
+        <select
           className={theme ? "language__btn btn2" : "language__btn btn2 dark"}
-          onClick={() => dispatch(changeLanguage())}
+          onChange={(e) => i18next.changeLanguage(e.target.value)}
         >
-          {language ? "English" : "Español"}
-        </button> */}
+          <option value='en'>English</option>
+          <option value='es'>Español</option>
+        </select>
       </ul>
     </nav>
   );

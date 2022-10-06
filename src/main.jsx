@@ -3,12 +3,10 @@ import ReactDOM from "react-dom/client";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import App from "./App";
 import Sobre from "./components/Sobre";
-import Servicios from "./components/Servicios";
 import Proyectos from "./components/Proyectos";
 import Contacto from "./components/Contacto";
 import { Provider } from "react-redux";
 import { stores } from "./features/store/storeConfig";
-import Footer from "./components/Footer";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
@@ -18,7 +16,6 @@ ReactDOM.createRoot(document.getElementById("root")).render(
           <Route path='/' element={<App />}>
             <Route index element={<Proyectos />} />
             <Route path='sobre-mi' element={<Sobre />} />
-            {/* <Route path="servicios" element={<Servicios />} /> */}
             <Route path='contacto' element={<Contacto />} />
             <Route path='proyectos' element={<Proyectos />} />
           </Route>

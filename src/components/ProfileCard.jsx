@@ -5,10 +5,15 @@ import image from "../images/profileImage.jpg";
 import { FaLinkedinIn, FaGithub, FaWhatsapp, FaTwitter } from "react-icons/fa";
 import { IconContext } from "react-icons";
 import { useSelector } from "react-redux";
+import { useTranslation } from "react-i18next";
+import resume from "../file/Kevin_Web_Developer_Resume.pdf";
+import cv from "../file/CURRICULUM.pdf";
+import i18next from "i18next";
 
 const ProfileCard = () => {
   const theme = useSelector((state) => state.theme.value);
-
+  const { t } = useTranslation();
+  console.log(i18next.language);
   return (
     <>
       <article className={theme ? "profile" : "profile dark"}>
@@ -18,8 +23,12 @@ const ProfileCard = () => {
         </h1>
         <h2 className='profile__desc'>FULLSTACK DEVELOPER</h2>
         <button className='btn'>
-          <a href='../file/CURRICULUM.pdf' download className='profile__cv'>
-            Descargar CV
+          <a
+            href={i18next.language == "es" ? cv : resume}
+            download
+            className='profile__cv'
+          >
+            {t("profileCard.download")}
           </a>
         </button>
         <div className='profile__socialMedias'>
@@ -69,18 +78,14 @@ const ProfileCard = () => {
               theme ? "profile__about-title" : "profile__about-title dark"
             }
           >
-            Sobre mí
+            {t("profileCard.aboutMe.title")}
           </h3>
           <p
             className={
               theme ? "profile__about-desc" : "profile__about-desc dark"
             }
           >
-            Soy un joven muy apasionado por el desarrollo web, en búsqueda de
-            nuevos desafíos, superándose día a día con perseverancia, capacidad
-            y motivación. Puedo comunicar de manera eficiente los problemas y
-            dar su resolución de una forma lógica entablando una conversación
-            cálida.
+            {t("profileCard.aboutMe.desc")}
           </p>
         </div>
       </article>

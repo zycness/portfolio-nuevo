@@ -1,0 +1,40 @@
+{
+  "profileCard": {
+    "download": "Download Resume (ENGLISH)",
+    "aboutMe": {
+      "title": "About me",
+      "desc": "I'm a profesional who is very pasionate for web development, seeking for new challengues, improving day by day with persistency, capability and motivation. I can communicate problems efficient and give its solution in a logical way"
+    }
+  },
+  "contact": {
+    "title": "Get in touch and you i'll contact you in a short time",
+    "name": "Name:",
+    "email": "Email: ",
+    "phone": "Phone number: ",
+    "message": "Message: ",
+    "send": "Send Message",
+    "error": "An error has been presented, please wait a few minutes to send it again.",
+    "success": "Your message has been successfully sended."
+  },
+  "footer": {
+    "made": "MADE BY: "
+  },
+  "navbar": {
+    "projects": "Projects",
+    "about": "About me",
+    "contact": "Contact"
+  },
+  "projectItem": {
+    "code": "CODE"
+  },
+  "projects": {
+    "title": "This are my projects",
+    "desc": "All projects were made by myself without any design reference"
+  },
+  "about": {
+    "title": "Who am i?",
+    "desc": "Hi! I'm Kevin, i have 20yo and i'am a web developer who is pasionate about programming since i was a kid and currently i'm studying as a self-learner, and day by day without breaks, with the intention and motivation to be able to be the best in what i do and offer help to others. I have the persistance and capability to confront and keep going through any adventure/problem that goes into my trayectory.",
+    "desc1": "I will give my best to try to solve any problem or drawback your are going through. Using all my resources and knowledge, so i can give you that solution you were seeking",
+    "tech": "Technologies i use"
+  }
+}

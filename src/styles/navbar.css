@@ -47,7 +47,7 @@
   align-items: center;
   border-radius: 5px;
   cursor: pointer;
-  margin: 0 5px;
+  margin: 5px;
   height: 30px;
   width: 70px;
   background-color: var(--color-0);
@@ -76,4 +76,13 @@
 .language__btn:hover,
 .language__btn:active {
   color: var(--color-10);
+}
+
+.language__btn {
+  width: 80px;
+}
+
+.language__btn:focus {
+  border: none;
+  outline: none;
 }

@@ -3,6 +3,7 @@ import "../styles/app.css";
 import "../styles/contacto.css";
 import emailjs from "@emailjs/browser";
 import { useSelector } from "react-redux";
+import { useTranslation } from "react-i18next";
 
 const Contacto = () => {
   const theme = useSelector((state) => state.theme.value);
@@ -12,6 +13,7 @@ const Contacto = () => {
   const serviceId = import.meta.env.VITE_SERVICE_ID;
   const templateId = import.meta.env.VITE_TEMPLATE_ID;
   const publicApi = import.meta.env.VITE_PUBLIC_API;
+  const { t } = useTranslation();
 
   async function handleSubmit(e) {
     e.preventDefault();
@@ -38,13 +40,13 @@ const Contacto = () => {
         ref={form}
       >
         <h4 className={theme ? "contacto__title" : "contacto__title dark"}>
-          Contácteme y será respondido/a a la brevedad.
+          {t("contact.title")}
         </h4>
         <label
           htmlFor='nombre'
           className={theme ? "contacto__label" : "contacto__label dark"}
         >
-          Nombre:
+          {t("contact.name")}
         </label>
         <input
           type='text'
@@ -58,7 +60,7 @@ const Contacto = () => {
           htmlFor='correo'
           className={theme ? "contacto__label" : "contacto__label dark"}
         >
-          Correo:
+          {t("contact.email")}
         </label>
         <input
           type='email'
@@ -72,7 +74,7 @@ const Contacto = () => {
           htmlFor='telefono'
           className={theme ? "contacto__label" : "contacto__label dark"}
         >
-          Teléfono:
+          {t("contact.phone")}
         </label>
         <input
           type='tel'
@@ -85,7 +87,7 @@ const Contacto = () => {
           htmlFor='mensaje'
           className={theme ? "contacto__label" : "contacto__label dark"}
         >
-          Mensaje:
+          {t("contact.message")}
         </label>
         <textarea
           name='mensaje'
@@ -95,14 +97,10 @@ const Contacto = () => {
           className={theme ? "contacto__textarea" : "contacto__textarea dark"}
         ></textarea>
         <button type='submit' className='btn' value='send'>
-          Enviar mensaje
+          {t("contact.send")}
         </button>
-        {error && (
-          <p className='error'>Ha surgido un error al enviar el mensaje.</p>
-        )}
-        {success && (
-          <p className='success'>¡Se ha enviado su mensaje correctamente!</p>
-        )}
+        {error && <p className='error'> {t("contact.error")}</p>}
+        {success && <p className='success'> {t("contact.success")}</p>}
       </form>
     </article>
   );
